@@ -26,7 +26,7 @@ public class PrintNum {
                     System.out.println(this.getName() + ": " + i);
                     if (i % 10 == 0 && 0 != i) {
                         try {
-                            lock.notify();       //唤醒另外一个进程
+                            lock.notifyAll();       //唤醒其他进程
                             lock.wait();   //暂时释放资源
                         } catch (InterruptedException e) {
                             e.printStackTrace();
