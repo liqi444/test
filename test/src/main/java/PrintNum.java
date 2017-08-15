@@ -6,7 +6,7 @@ public class PrintNum {
     }
     private byte[] lock = new byte[0];  //自定义锁对象，这样代价最小，也可已使用当前对象this
     
-    //test代码2
+    //test代码3
 
     public void demo() {
         PrintThread a = new PrintThread("a");
